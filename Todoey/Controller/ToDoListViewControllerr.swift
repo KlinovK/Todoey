@@ -138,7 +138,7 @@ extension ToDoListViewController: UISearchBarDelegate {
         request.predicate = NSPredicate(format: "title CONTAINS[cd] %@", searchBar.text!)
         
         request.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
-        loadItems(with: request, predicate: )
+        loadItems(with: request)
 
    
 }
